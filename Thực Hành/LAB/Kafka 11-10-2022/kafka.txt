@@ -1,0 +1,22 @@
+Link YTB: https://www.youtube.com/watch?v=lFox22RJE7s&t=20s
+
+Kafka version: 3.2.0
+Scala: 2.13
+cmd: cd C:\kafka\bin\windows
+
+
+start zookeeper: zookeeper-server-start.bat ..\..\config\zookeeper.properties
+
+start kafka: kafka-server-start.bat ..\..\config\server.properties
+
+Create Kafka topic: kafka-topics.bat --create --topic my-topic --bootstrap-server localhost:9092 --replication-factor 1 --partitions 3
+
+List Kafka topics: kafka-topics.bat --list --bootstrap-server localhost:9092
+
+Describe Kafka topic: kafka-topics.bat --describe --topic my-topic --bootstrap-server localhost:9092
+
+Delete Kafka topic: kafka-topics.bat --delete --topic my-topic --bootstrap-server localhost:9092
+
+kafka-console-producer.bat --broker-list localhost:9092 --topic my-topic
+
+kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic my-topic --from-beginning
