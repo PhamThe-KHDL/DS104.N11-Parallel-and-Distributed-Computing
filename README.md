@@ -29,7 +29,7 @@ Học kỳ 1 Năm 4 Năm học 2022-2023
 ### Nội dung đồ án
 
 - Tiền xử lý và phân tích bộ dữ liệu.
-- Hướng tiếp cận: Để tạo ra mô hình dự đoán năng lượng sử dụng trong thời gian thực, chúng tôi sử dụng các phương pháp Univariate Time Series Forecasting và Multivariate Time Series Forecasting thực nghiệm trên các mô hình như: TCNForecaster, Seq2SeqForecaster, LSTMForecaster, CNN, GRU, LSTM. Để đánh giá mô hình chúng tôi sử dụng độ đo RMSE.
+- Hướng tiếp cận: Để tạo ra mô hình dự đoán năng lượng sử dụng trong thời gian thực, chúng tôi sử dụng các phương pháp Univariate Time Series Forecasting và Multivariate Time Series Forecasting thực nghiệm trên các mô hình như: BigDL (TCNForecaster, Seq2SeqForecaster, LSTMForecaster), CNN, GRU, LSTM. Để đánh giá mô hình chúng tôi sử dụng độ đo RMSE.
 
 
 - Kết quả: Kết quả cao nhất mà chúng tôi đạt được là **RMSE = 0.489** sử dụng LSTMForecaster với phương pháp chuỗi thời gian đa biến sử dụng thuộc tính nhiệt độ và độ ẩm (temperature+humidity).
